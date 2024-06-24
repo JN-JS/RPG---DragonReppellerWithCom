@@ -9,3 +9,7 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick"];
 // ###########################
+
+// fetching HTML (CSS)selectors with querySelector to init game variables
+// ###########################
+let button1 = document.querySelector("#button1");
