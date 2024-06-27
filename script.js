@@ -25,6 +25,8 @@ const monsterName = document.querySelector("#monsterName");
 // because the variable monsterHealth has already been used, i need to create a new
 const monsterHealthText = document.querySelector("#monsterHealth")
 
+// Initialize buttons
+
 
 function goStore() {
     console.log("Going to store.");
