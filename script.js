@@ -80,7 +80,11 @@ function fightDragon() {
 }
 
 function buyHealth() {
-
+    gold -= 10;
+    health += 10;
+    // display health and gold variables on the game screen
+    goldText.innerText = gold
+    healthText.innerText = health
 }
 
 function buyWeapon() {
