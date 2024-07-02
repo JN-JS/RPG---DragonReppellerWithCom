@@ -25,6 +25,25 @@ const monsterName = document.querySelector("#monsterName");
 // because the variable monsterHealth has already been used, i need to create a new
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+const weapons = [
+    {
+      name: "stick",
+      power: 5
+    },
+    {
+      name: "dagger",
+      power: 30
+    },
+    {
+      name: "claw hammer",
+      power: 50
+    },
+    {
+      name: "sword",
+      power: 100
+    }
+];
+
 // need to create a data structure for the different locations, to use in update()
 const locations = [
     {
