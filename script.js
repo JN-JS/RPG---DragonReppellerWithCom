@@ -111,7 +111,21 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-
+    if(gold >= 30) {
+        gold -= 30
+        // cWI correspond to an index in weapons array
+        currentWeaponIndex++;
+        goldText.innerText = gold;
+        // Access the name of the current weapon(cWI + 1)
+        let newWeapon = weapons[currentWeaponIndex].name
+        text.innerText = "You now have a " + newWeapon + "."
+        // add new weapon to inventory
+        inventory.push(newWeapon)
+        // add to the existing text
+        text.innerText += " In your inventory you have: " + inventory.name
+    } else {
+    text.innerText = "You do not have enough gold to buy a weapon."
+    }
 }
 
 function fightSlime() {
