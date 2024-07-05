@@ -111,7 +111,8 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    if(currentWeaponIndex < weapons.length) {
+    // weapons.length - 1 ->the index in a array is 1 less than the length
+    if(currentWeaponIndex < weapons.length - 1) {
         if(gold >= 30) {
         gold -= 30
         // cWI correspond to an index in weapons array
