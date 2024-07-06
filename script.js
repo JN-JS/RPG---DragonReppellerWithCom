@@ -162,6 +162,11 @@ function sellWeapon() {
 	}
 }
 
+// fighting differnet monster use similar logic, goFight manage that logic
+function goFight() {
+
+}
+
 function fightSlime() {
 
 }
