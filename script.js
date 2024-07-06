@@ -174,9 +174,13 @@ function fightSlime() {
 }
 
 function fightBeast() {
-  
+  // fanged beast is index 1
+	fighting = 1
+  goFight()
 }
 
 function fightDragon() {
-	console.log("Fighting dragon.");
+	// Dragon is index 2
+	fighting = 2
+  goFight()
 }
