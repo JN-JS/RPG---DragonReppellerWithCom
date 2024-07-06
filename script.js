@@ -184,3 +184,11 @@ function fightDragon() {
 	fighting = 2
   goFight()
 }
+
+function attack() {
+
+}
+
+function dodge() {
+	
+}
