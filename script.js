@@ -44,6 +44,24 @@ const weapons = [
 	}
 ];
 
+const monsters = [
+  {
+    name: "slime",
+    level: 2,
+    health: 15
+  },
+  {
+    name: "fanged beast",
+    level: 8,
+    health: 60
+  },
+  {
+    name: "dragon",
+    level: 20,
+    health: 300
+  }
+];
+
 // need to create a data structure for the different locations, to use in update()
 const locations = [
 	{
