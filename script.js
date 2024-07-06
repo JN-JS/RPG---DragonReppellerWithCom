@@ -168,7 +168,9 @@ function goFight() {
 }
 
 function fightSlime() {
-
+	// slime is index 0
+	fighting = 0
+  goFight()
 }
 
 function fightBeast() {
