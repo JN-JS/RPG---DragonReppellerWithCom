@@ -139,6 +139,10 @@ function sellWeapon() {
 	if(inventory.length > 1) {
 		gold += 15;
     goldText.innerText = gold
+		// takes 1st element in inventory to assign it to currentWeapon
+		let currentWeapon = inventory.shift();
+		text.innerText = "You sold a " + currentWeapon + "."
+		text.innerText += " In your inventory you have: " + inventory
   }
 }
 
