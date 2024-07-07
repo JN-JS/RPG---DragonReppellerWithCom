@@ -177,6 +177,9 @@ function goFight() {
 	// update text for current monster's stat
 	monsterName.innerText = monsters[fighting].name
   monsterHealthText.innerText = monsterHealth
+	if (health <= 0) {
+    lose()
+  }
 }
 
 function fightSlime() {
