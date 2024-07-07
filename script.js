@@ -200,6 +200,9 @@ function fightDragon() {
 function attack() {
 	text.innerText = "The " + monsters[fighting].name + " attacks.";
   text.innerText += " You attack it with your " + weapons[currentWeaponIndex].name + ".";
+	healthText.innerText = health;
+  monsterHealthText.innerText = monsterHealth
+
   health -= monsters[fighting].level;
 	// Add to weapon power a random number from 1 to 5
 	monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
