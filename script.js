@@ -170,7 +170,13 @@ function sellWeapon() {
 
 // fighting differnet monster use similar logic, goFight manage that logic
 function goFight() {
-
+	update(locations[3]);
+	monsterHealth = monsters[fighting].health;
+	// was hidden by CSS
+	monsterStats.style.display = 'block';
+	// update text for current monster's stat
+	monsterName.innerText = monsters[fighting].name
+  monsterHealthText.innerText = monsterHealth
 }
 
 function fightSlime() {
