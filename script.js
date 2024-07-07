@@ -216,3 +216,11 @@ function attack() {
 function dodge() {
 
 }
+
+function lose() {
+
+}
+
+function defeatMonster() {
+	
+}
