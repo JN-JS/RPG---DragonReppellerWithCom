@@ -175,10 +175,12 @@ function goFight() {
 	// was hidden by CSS
 	monsterStats.style.display = 'block';
 	// update text for current monster's stat
-	monsterName.innerText = monsters[fighting].name
-  monsterHealthText.innerText = monsterHealth
+	monsterName.innerText = monsters[fighting].name;
+  monsterHealthText.innerText = monsterHealth;
 	if (health <= 0) {
-    lose()
+    lose();
+  } else if(monsterHealth <= 0) {
+    defeatMonster();
   }
 }
 
