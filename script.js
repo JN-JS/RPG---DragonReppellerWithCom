@@ -102,6 +102,8 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 function update(location) {
+	// Hides monster's stat after defeat
+	monsterStats.style.display = 'none';
 	// innerText controls the text that appears in an HTML element
 	button1.innerText = location["button text"][0];
 	button2.innerText = location["button text"][1];
