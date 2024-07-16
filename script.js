@@ -225,6 +225,13 @@ function attack() {
   health -= monsters[fighting].level;
 	// Add to weapon power a random number from 1 to 5
 	monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
+
+	// condition for win or lose
+	if (health <= 0) {
+    lose();
+  } else if (monsterHealth <= 0) {
+    defeatMonster();
+  }
 }
 
 function dodge() {
