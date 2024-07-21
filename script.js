@@ -228,7 +228,11 @@ function attack() {
 	healthText.innerText = health;
   monsterHealthText.innerText = monsterHealth
 
-  health -= monsters[fighting].level;
+  // gives a dynamic atk value
+  // sets health - getMonsterAttackValue which passes level as arg
+  health -= getMonsterAttackValue(monsters[fighting].level);
+  // health -= monsters[fighting].level;
+
 	// Add to weapon power a random number from 1 to 5
 	monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
 
@@ -243,6 +247,11 @@ function attack() {
 		defeatMonster();
 	}
   }
+}
+
+function getMonsterAttackValue(level) {
+  const hit =  (level * 5) - (Math.floor(Math.random() * xp));
+  return hit;
 }
 
 function dodge() {
