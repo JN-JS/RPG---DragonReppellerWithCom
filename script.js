@@ -254,7 +254,7 @@ function attack() {
 	}
   }
   // Add possibility of weapon break
-  if(Math.random() <= .1) {
+  if(Math.random() <= .1 && inventory.length !== 1) {
     // .pop() remove and return last item in array
 	text.innerText += " Your " + inventory.pop() + " breaks."
 	currentWeaponIndex--;
