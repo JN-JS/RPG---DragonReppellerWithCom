@@ -257,6 +257,7 @@ function attack() {
   if(Math.random() <= .1) {
     // .pop() remove and return last item in array
 	text.innerText += " Your " + inventory.pop() + " breaks."
+	currentWeaponIndex--;
   }
 }
 
