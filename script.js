@@ -315,7 +315,7 @@ function easterEgg() {
 
 function pick(guess) {
 	const numbers = [];
-	
+
 	while(numbers.length < 10) {
     numbers.push(Math.floor(Math.random() * 11))
   }
@@ -326,7 +326,9 @@ function pick(guess) {
   }
 
 	if (numbers.includes(guess)) {
-    
+    text.innerText += "Right! You win 20 gold!";
+    gold += 20;
+    goldText.innerText = gold;
   }
 }
 
